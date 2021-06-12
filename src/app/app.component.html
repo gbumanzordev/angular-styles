@@ -1,17 +1,14 @@
-<article>
-  <h3 id="title">This is the title</h3>
-  <!--  <p class="paragraph">Lorem ipsum dolor sit amet.</p>-->
-  <p>Lorem ipsum dolor sit amet</p>
-  <!--  <p>-->
-  <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, porro!-->
-  <!--  </p>-->
-  <!--  <p>-->
-  <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, porro!-->
-  <!--  </p>-->
-  <!--  <p>-->
-  <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, porro!-->
-  <!--  </p>-->
-</article>
-<app-navbar></app-navbar>
-<app-grid></app-grid>
+<div class="container">
+  <h1>{{ yourName | lowercase }}</h1>
+  <h1>{{ yourName | uppercase }}</h1>
+  <h2>{{ money | currency: "JPY" }}</h2>
+  <h2>
+    <pre>{{ obj | json }}</pre>
+  </h2>
+  <h1>
+    {{ myObservable$ | async }}
+  </h1>
+  <h1>{{ yourName | reverse | uppercase }}</h1>
+</div>
+
 <router-outlet></router-outlet>
